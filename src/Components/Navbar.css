@@ -1,0 +1,43 @@
+
+.nav-link.active {
+    border-bottom: 2px solid rgb(175, 104, 37);
+    font-weight: 700;
+}
+.navbar-brand.active{
+    font-size: 40px;
+   
+}
+.navbar-brand.active:first-of-type span {
+    color:rgb(175, 104, 37);
+}
+.navbar.navbar-expand-lg.bg-body-tertiary{
+    background-color: beige
+}
+.navbar.bg-body-tertiary{
+    background-color: beige!important;
+}
+.border-line li{
+   
+    color:black;
+    text-decoration: none;
+    border:1px solid rgb(175, 104, 37);
+    border-radius:8px;
+    padding: 10px;
+    font-weight: 400;
+   
+}
+.active-press{
+    color:black;
+    text-decoration: none;
+   
+   border-radius:8px;
+   background-color: transparent;
+   
+}
+ .active-press.active  {
+    
+    /*box-shadow: 0px 0px 7px rgb(175, 104, 37);*/
+    color:rgb(175, 104, 37) ;
+    font-weight: 900;
+    
+}
