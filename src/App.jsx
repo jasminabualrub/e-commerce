@@ -1,12 +1,12 @@
-import React from 'react'
+
 import { createBrowserRouter,RouterProvider,} from "react-router-dom";
 
 import Root from './routes/Root';
 import Notfound from './Pages/Notfound/Component/Notfound';
 import Home from './Pages/Home/Component/Home';
 import About from './Pages/About/Components/About';
-import Signin from './Pages/Signin/Component/Signin';
-import Signup from './Pages/Signup/Component/Signup';
+import Signin from './Pages/Signin/Component/Login';
+import Signup from './Pages/Signup/Component/Register';
 import Forgetpassward from './Pages/Forgetpassward/Component/Forgetpassward';
 import Profile from './Pages/Profile/Component/Profile';
 import Products from './Pages/Products/Component/Products';
@@ -18,7 +18,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root/>,
-    errorElement:<Notfound/>,
+   
     children:[{
       path: "/",
     element: <Home/>,
@@ -63,8 +63,12 @@ const router = createBrowserRouter([
       path: "/categories",
     element: <Categories/>,
     },
-
+    {path:'*',
+  element: <Notfound/>,
+  },
   ]
+
+  
   },
 ]);
 function App() {
