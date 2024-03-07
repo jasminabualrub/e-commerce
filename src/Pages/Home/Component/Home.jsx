@@ -1,8 +1,13 @@
-
-import Categories from './../../Categories/Component/Categories';
+import Hero from "../../../Components/Hero/Hero";
+import Categories from "./../../Categories/Component/Categories";
 
 function Home() {
-  return(<Categories/>);
+  return (
+    <>
+      <Hero />
+      <Categories />
+    </>
+  );
 }
 
 export default Home;

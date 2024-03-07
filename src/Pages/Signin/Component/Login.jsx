@@ -39,7 +39,7 @@ return false;}
     console.log(validate);
  
     try{
-      const { data } = await axios.post(`${import.meta.env.VITE_API_URL}/auth/signin`,{user}
+      const { data } = await axios.post(`${import.meta.env.VITE_API_URL}/auth/signin`,user
     );
     setUser({
      

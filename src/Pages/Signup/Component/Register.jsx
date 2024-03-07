@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { object, string} from 'yup';
 import axios from "axios";
-
+import {Zoom, toast} from 'react-toastify'
 function Signup() {
   const [errors,setError]=useState([]);
   const [user, setUser] = useState({
@@ -54,6 +54,21 @@ return false;}
       password: "",
       image: "",
     });
+   if(data.message=='success'){
+    toast.success('Your Account has been created successfully', {
+      position: "bottom-center",
+      autoClose: 6000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+      transition: Zoom,
+      
+      });
+      
+   }
     console.log(data);}
     catch(err){console.log(err)}
     
